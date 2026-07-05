@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "apt-principles-agents",
+    "version": "1.0.0",
+    "commit": "8e3f9a68aa391789b4a746be38078282a1505346"
+  },
+  "manifests": [
+    "governance"
+  ],
+  "platforms": [
+    "codex",
+    "claude",
+    "copilot",
+    "gemini"
+  ],
+  "managedFiles": [
+    {
+      "source": "agents/harness/apt-repo-scanner.md",
+      "target": ".apt/agents/harness/apt-repo-scanner.md",
+      "kind": "canonical",
+      "sha256": "c496a4f3190b718180184aa8da7c1b78e16ab9a0bfb22c3961316d654c0d8155"
+    },
+    {
+      "source": "agents/harness/apt-verifier.md",
+      "target": ".apt/agents/harness/apt-verifier.md",
+      "kind": "canonical",
+      "sha256": "5d04e07e340f41984043ae993d27c99c78a66991f958b9809adf8f1bc66f4b71"
+    },
+    {
+      "source": "checklists/project-adoption-checklist.md",
+      "target": ".apt/checklists/project-adoption-checklist.md",
+      "kind": "canonical",
+      "sha256": "14ab8bbfb8519c5c895aabba742c42f3d179159832b37d488ae3bab138161ed6"
+    },
+    {
+      "source": "checklists/repo-alignment-checklist.md",
+      "target": ".apt/checklists/repo-alignment-checklist.md",
+      "kind": "canonical",
+      "sha256": "dd20ad19c6f83799051de0679408d7760f971a2ea778cfc41b39e873afe92e3e"
+    },
+    {
+      "source": "context-packs/apt-core-pack.md",
+      "target": ".apt/context-packs/apt-core-pack.md",
+      "kind": "canonical",
+      "sha256": "71f0ba3b2de2590c982740c29636f5ab857e5e4d40ed5338e848c2de37a2d816"
+    },
+    {
+      "source": "governance/architecture-review.md",
+      "target": ".apt/governance/architecture-review.md",
+      "kind": "canonical",
+      "sha256": "3702cc4b954619473bae44615d4cc19c465d272852633914c4c0fa3fd22823df"
+    },
+    {
+      "source": "governance/design-review.md",
+      "target": ".apt/governance/design-review.md",
+      "kind": "canonical",
+      "sha256": "4bc35c3cc3f577ad432e4380080b35aeb9e3b7002b6d593e47b693978b3a1e9c"
+    },
+    {
+      "source": "governance/maturity-model.md",
+      "target": ".apt/governance/maturity-model.md",
+      "kind": "canonical",
+      "sha256": "4f6784fde67d6df8df5a9763021d45499c6b7d5e4618ddecf3f9641a85fc04a9"
+    },
+    {
+      "source": "governance/README.md",
+      "target": ".apt/governance/README.md",
+      "kind": "canonical",
+      "sha256": "ba9ec6ffcf0e092ea702b3beced2928b599ab90697e3d6751b78aa99b0cd97ff"
+    },
+    {
+      "source": "governance/repository-review.md",
+      "target": ".apt/governance/repository-review.md",
+      "kind": "canonical",
+      "sha256": "74c8a556329e96b3946fc4098c20d663c1f4aa51ddacf1dc5f960ac89b902712"
+    },
+    {
+      "source": "governance/scorecard.md",
+      "target": ".apt/governance/scorecard.md",
+      "kind": "canonical",
+      "sha256": "17812d0405658d5e959313e5ddff61bda960775ac124acbdb26a973a2269188f"
+    },
+    {
+      "source": "governance/service-readiness-review.md",
+      "target": ".apt/governance/service-readiness-review.md",
+      "kind": "canonical",
+      "sha256": "4c0dfc84355106d6f15da1188c8e03ed11e6f4c27e64b62d952d4ebcce4dc8c6"
+    },
+    {
+      "source": "platforms/codex/source/skills/apt-readiness-audit/SKILL.md",
+      "target": ".apt/platforms/codex/source/skills/apt-readiness-audit/SKILL.md",
+      "kind": "canonical",
+      "sha256": "6f79a8062f8c196aa5646f4a99e6b6b548c4c8ac2a79ec363daba7dc0fb2a175"
+    },
+    {
+      "source": "platforms/codex/source/skills/repo-standardization/SKILL.md",
+      "target": ".apt/platforms/codex/source/skills/repo-standardization/SKILL.md",
+      "kind": "canonical",
+      "sha256": "801b4f83e7a75161be27a598d197dd1c3f1573141f25f3b53408307ab7cf5689"
+    },
+    {
+      "source": "principles/framework.md",
+      "target": ".apt/principles/framework.md",
+      "kind": "canonical",
+      "sha256": "e50145ae58ca7380c0e54ed45432364fca714245117ef2362a45a633196f4a0d"
+    },
+    {
+      "source": "prompts/apply-apt-principles.md",
+      "target": ".apt/prompts/apply-apt-principles.md",
+      "kind": "canonical",
+      "sha256": "df3b7d2c8542d47b35433a70a8ab618f02b9143020e8e79224e9a0138a1c03e0"
+    },
+    {
+      "source": "prompts/repo-alignment-review.md",
+      "target": ".apt/prompts/repo-alignment-review.md",
+      "kind": "canonical",
+      "sha256": "95a068a6b5091af9a59ee42c2244fb4235f92d8d99ad438bee26ee2276ae31c9"
+    },
+    {
+      "source": "references/agent-standards-contract.json",
+      "target": ".apt/references/agent-standards-contract.json",
+      "kind": "canonical",
+      "sha256": "a9c48595321321dfd72437e94656282210370441f07068dafc448b0ed4d5cd3d"
+    },
+    {
+      "source": "references/ai-harness-contract.json",
+      "target": ".apt/references/ai-harness-contract.json",
+      "kind": "canonical",
+      "sha256": "26732e193105f439b7e1fc8b3359f526b6df731ae10ce33743cca6550e2b6f1c"
+    },
+    {
+      "source": "references/ai-review-bundle.json",
+      "target": ".apt/references/ai-review-bundle.json",
+      "kind": "canonical",
+      "sha256": "dece64b770517d1622efbb6a948e30a56909c969a3a4c1a15169833839d5c4b3"
+    },
+    {
+      "source": "references/apt-application-model.json",
+      "target": ".apt/references/apt-application-model.json",
+      "kind": "canonical",
+      "sha256": "a0e1dcb44efb8090938eb3e196739a2901a23c114302549fbe501aacf82d829a"
+    },
+    {
+      "source": "references/architecture-map.json",
+      "target": ".apt/references/architecture-map.json",
+      "kind": "canonical",
+      "sha256": "e07e698c1babc4cfdfdd0b1e5622e7248272f120a07353cce64c95f1a07c6eac"
+    },
+    {
+      "source": "references/design-lint-gates.json",
+      "target": ".apt/references/design-lint-gates.json",
+      "kind": "canonical",
+      "sha256": "6cb5f0a572548318f6117c84a063ba5b9476f6b0d5d9e3220518c8ebf0d55e30"
+    },
+    {
+      "source": "references/design-tokens.json",
+      "target": ".apt/references/design-tokens.json",
+      "kind": "canonical",
+      "sha256": "879993a514cbc7b5a31c99f016356aeea4912a3d856209c2c2b721a9dce0a81d"
+    },
+    {
+      "source": "references/installation.schema.json",
+      "target": ".apt/references/installation.schema.json",
+      "kind": "canonical",
+      "sha256": "2bea5aef8dcf98b8586712024f3c8c18b18ad5a09bb08cfbe886de0bcdea69c1"
+    },
+    {
+      "source": "references/knowledge-contracts.json",
+      "target": ".apt/references/knowledge-contracts.json",
+      "kind": "canonical",
+      "sha256": "9cc5524dfc5c37805ba518a27c012b8c7e95a761a14662fd8e5136d5b4e71b61"
+    },
+    {
+      "source": "references/metadata-versioning-contract.json",
+      "target": ".apt/references/metadata-versioning-contract.json",
+      "kind": "canonical",
+      "sha256": "ef5ba96ffae610447098de43c659f4765b094d56cccf126a21c330eecb7ebb5a"
+    },
+    {
+      "source": "references/project-profile.schema.json",
+      "target": ".apt/references/project-profile.schema.json",
+      "kind": "canonical",
+      "sha256": "2eded24db6e4d163c344cb288d54eec3ca4e3a0454be7afd0bfa00990552d894"
+    },
+    {
+      "source": "references/workspace-consumers.json",
+      "target": ".apt/references/workspace-consumers.json",
+      "kind": "canonical",
+      "sha256": "fdf46f30ba4ca3fd9ab5dd3815224ce3b843e54d7fcc86e15f95fc42b6142579"
+    },
+    {
+      "source": "templates/apt-audit-report-template.md",
+      "target": ".apt/templates/apt-audit-report-template.md",
+      "kind": "canonical",
+      "sha256": "f1ad40d4de7c8e04bd5f799c2fedf1dc8c70a8a3477921c57638ae47b82f9411"
+    },
+    {
+      "source": "templates/project-adoption-template.md",
+      "target": ".apt/templates/project-adoption-template.md",
+      "kind": "canonical",
+      "sha256": "06a7072ae44f669911d9c1f1cf7845c6f918b2b11760b682c9021fb8fec291fe"
+    },
+    {
+      "source": "platforms/codex/source/skills/apt-readiness-audit/SKILL.md",
+      "target": ".claude/skills/apt-readiness-audit/SKILL.md",
+      "kind": "platform",
+      "sha256": "6f79a8062f8c196aa5646f4a99e6b6b548c4c8ac2a79ec363daba7dc0fb2a175"
+    },
+    {
+      "source": "platforms/codex/source/skills/repo-standardization/SKILL.md",
+      "target": ".claude/skills/repo-standardization/SKILL.md",
+      "kind": "platform",
+      "sha256": "801b4f83e7a75161be27a598d197dd1c3f1573141f25f3b53408307ab7cf5689"
+    },
+    {
+      "source": "platforms/codex/source/skills/apt-readiness-audit/SKILL.md",
+      "target": ".codex/skills/apt-readiness-audit/SKILL.md",
+      "kind": "platform",
+      "sha256": "6f79a8062f8c196aa5646f4a99e6b6b548c4c8ac2a79ec363daba7dc0fb2a175"
+    },
+    {
+      "source": "platforms/codex/source/skills/repo-standardization/SKILL.md",
+      "target": ".codex/skills/repo-standardization/SKILL.md",
+      "kind": "platform",
+      "sha256": "801b4f83e7a75161be27a598d197dd1c3f1573141f25f3b53408307ab7cf5689"
+    },
+    {
+      "source": "prompts/apply-apt-principles.md",
+      "target": ".gemini/commands/apply-apt-principles.md",
+      "kind": "platform",
+      "sha256": "df3b7d2c8542d47b35433a70a8ab618f02b9143020e8e79224e9a0138a1c03e0"
+    },
+    {
+      "source": "prompts/repo-alignment-review.md",
+      "target": ".gemini/commands/repo-alignment-review.md",
+      "kind": "platform",
+      "sha256": "95a068a6b5091af9a59ee42c2244fb4235f92d8d99ad438bee26ee2276ae31c9"
+    },
+    {
+      "source": "platforms/github-copilot/copilot-instructions.md",
+      "target": ".github/copilot-instructions.md",
+      "kind": "instruction",
+      "sha256": "fdbf0d942ac08882cfe0597557b52586f3cca4b80239f8b9d1a8d142c1c0716e"
+    },
+    {
+      "source": "prompts/apply-apt-principles.md",
+      "target": ".github/prompts/apply-apt-principles.md",
+      "kind": "platform",
+      "sha256": "df3b7d2c8542d47b35433a70a8ab618f02b9143020e8e79224e9a0138a1c03e0"
+    },
+    {
+      "source": "prompts/repo-alignment-review.md",
+      "target": ".github/prompts/repo-alignment-review.md",
+      "kind": "platform",
+      "sha256": "95a068a6b5091af9a59ee42c2244fb4235f92d8d99ad438bee26ee2276ae31c9"
+    },
+    {
+      "source": "platforms/codex/source/skills/apt-readiness-audit/SKILL.md",
+      "target": ".github/skills/apt-readiness-audit/SKILL.md",
+      "kind": "platform",
+      "sha256": "6f79a8062f8c196aa5646f4a99e6b6b548c4c8ac2a79ec363daba7dc0fb2a175"
+    },
+    {
+      "source": "platforms/codex/source/skills/repo-standardization/SKILL.md",
+      "target": ".github/skills/repo-standardization/SKILL.md",
+      "kind": "platform",
+      "sha256": "801b4f83e7a75161be27a598d197dd1c3f1573141f25f3b53408307ab7cf5689"
+    },
+    {
+      "source": "CLAUDE.md",
+      "target": "CLAUDE.md",
+      "kind": "instruction",
+      "sha256": "c6c34c1c5da94e59c46aad2e1a21e45869125923230f8a49cd8b44d92b921b06"
+    },
+    {
+      "source": "CODEX.md",
+      "target": "CODEX.md",
+      "kind": "instruction",
+      "sha256": "45fe0380ce8376d689e59c7d4768203d38989ac371753ceb56c3ffef80164dfc"
+    },
+    {
+      "source": "GEMINI.md",
+      "target": "GEMINI.md",
+      "kind": "instruction",
+      "sha256": "86bf9a43158f4400aa09d4caba98f2551d841725d30c3e7b6c939981330449a0"
+    }
+  ],
+  "localContext": "docs/project-context.md",
+  "lastOperation": {
+    "type": "install",
+    "at": "2026-07-05T19:17:14.312Z"
+  }
+}

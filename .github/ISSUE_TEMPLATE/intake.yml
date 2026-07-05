@@ -1,0 +1,85 @@
+name: APT intake
+description: Report work whose owner is unknown, cross-product, or needs an explicit triage decision
+title: "[Intake] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when the owning repository is unknown or the outcome may require several repositories. If the owner is already clear, create the issue there instead.
+
+  - type: textarea
+    id: situation
+    attributes:
+      label: Situation
+      description: What happened, or what outcome is needed?
+      placeholder: Describe the situation in plain language.
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected people or systems
+      description: Who or what is affected? Include likely APT products when known.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What is blocked, degraded, risky, or costly?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Provide safe timestamps, request IDs, reproduction steps, screenshots, or examples. Do not include secrets or sensitive payment/account data.
+
+  - type: textarea
+    id: desired_outcome
+    attributes:
+      label: Desired outcome
+      description: What would a useful resolution look like?
+    validations:
+      required: true
+
+  - type: input
+    id: possible_owner
+    attributes:
+      label: Possible owning repository
+      description: Add a repository name or URL if you have a likely owner.
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope signals
+      options:
+        - label: The owner is unknown.
+        - label: More than one APT product or repository may be involved.
+        - label: A customer, partner, support, or operational outcome needs validation.
+        - label: This may require security or privacy review.
+
+  - type: checkboxes
+    id: sensitive_data
+    attributes:
+      label: Sensitive-data confirmation
+      options:
+        - label: I have not included secrets, credentials, private keys, payment card data, or unnecessary personal information.
+          required: true
+
+  - type: textarea
+    id: triage_decision
+    attributes:
+      label: Triage decision
+      description: Maintainers record the owner, decision, native sub-issues, and validation plan here.
+      value: |
+        ## Decision
+
+        ## Owning repositories
+
+        ## Native sub-issues
+
+        ## Validation plan
