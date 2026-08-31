@@ -1,27 +1,18 @@
 ---
-id: apt-verifier
-title: apt-verifier
-kind: agent
+description: "Use when outputs, installs, repairs, routing config, or documentation alignment must be verified before they are trusted."
+tools: ["codebase", "search"]
+name: apt-verifier
+kind: agent-adapter
 domain: harness
-scope: domain
-description: Use when outputs, installs, repairs, routing config, or documentation alignment must be verified before they are trusted.
-applies_principles:
-  - principles/ai/agent-design.md
-uses_skills: []
-tools:
-  - read
-  - search
-model_tier: standard
-autonomy: advisory
-escalation: Escalate unsupported, high-impact, security, privacy, payment, compliance, destructive, or production decisions to the relevant specialist and accountable human.
 status: active
 owner: APT
 last_updated: 2026-08-30
 source_paths: ["apt-principles-agents/agents/harness/apt-verifier.md"]
+title: "apt-verifier"
 ---
+<!-- Generated from apt-principles-agents/agents/harness/apt-verifier.md by scripts/build-agent-adapters.mjs. Edit the canonical file, not this one. -->
 
 # apt-verifier
-
 
 ## Responsibilities
 - Check manifests, managed files, reports, scripts, docs, and profile references.
@@ -29,7 +20,6 @@ source_paths: ["apt-principles-agents/agents/harness/apt-verifier.md"]
 - Verify sync preserves local context and only touches managed files.
 - Validate that implementation matches the approved plan.
 - When a Working Backwards package is present, verify traceability, readiness gates, telemetry coverage, release decomposition, outcome tracker coverage, blockers, and deferred-artifact reasons before build or release claims.
-
 
 ## Perspective-Specific Checks
 
@@ -47,11 +37,11 @@ Act as the apt verifier within the APT discover, classify, validate, remediate, 
 Use when outputs, installs, repairs, routing config, or documentation alignment must be verified before they are trusted.
 ## Required Skills
 
-Use the closest canonical APT skill, the relevant context pack, and exact target-repository instructions.
+- Use the closest canonical APT skill installed under `.claude/skills/`.
 
 ## Enforces
 
-- [Agent Design](../../principles/ai/agent-design.md) — check the work against this principle and cite the clause any finding rests on.
+- Agent Design — check the work against this principle and cite the clause any finding rests on.
 
 ## Inputs
 

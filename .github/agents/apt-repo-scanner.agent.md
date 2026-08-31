@@ -1,6 +1,7 @@
 ---
-name: apt-repo-scanner
 description: "Use when inspecting a target repository for installed APT standards, drift, missing files, duplicates, or repair needs."
+tools: ["codebase", "search"]
+name: apt-repo-scanner
 kind: agent-adapter
 domain: harness
 status: active
