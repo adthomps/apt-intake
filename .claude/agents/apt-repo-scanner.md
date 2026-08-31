@@ -1,24 +1,17 @@
 ---
-id: apt-repo-scanner
-title: apt-repo-scanner
-kind: agent
+name: apt-repo-scanner
+description: "Use when inspecting a target repository for installed APT standards, drift, missing files, duplicates, or repair needs."
+tools: Read, Grep, Glob
+model: sonnet
+kind: agent-adapter
 domain: harness
-scope: domain
-description: Use when inspecting a target repository for installed APT standards, drift, missing files, duplicates, or repair needs.
-applies_principles:
-  - principles/ai/agent-design.md
-uses_skills: []
-tools:
-  - read
-  - search
-model_tier: standard
-autonomy: none
-escalation: Escalate unsupported, high-impact, security, privacy, payment, compliance, destructive, or production decisions to the relevant specialist and accountable human.
 status: active
 owner: APT
 last_updated: 2026-08-30
 source_paths: ["apt-principles-agents/agents/harness/apt-repo-scanner.md"]
+title: "apt-repo-scanner"
 ---
+<!-- Generated from apt-principles-agents/agents/harness/apt-repo-scanner.md by scripts/build-agent-adapters.mjs. Edit the canonical file, not this one. -->
 
 # apt-repo-scanner
 
@@ -32,7 +25,6 @@ Inspect target repositories for installed APT agent standards, drift, missing fi
 - Compare managed target files with source files.
 - Report missing, drifted, unmanaged duplicate, and conflict candidates.
 - Generate scan reports without modifying managed files.
-
 
 ## Perspective-Specific Checks
 
@@ -53,11 +45,11 @@ Act as the apt repo scanner within the APT discover, classify, validate, remedia
 Use when inspecting a target repository for installed APT standards, drift, missing files, duplicates, or repair needs.
 ## Required Skills
 
-Use the closest canonical APT skill, the relevant context pack, and exact target-repository instructions.
+- Use the closest canonical APT skill installed under `.claude/skills/`.
 
 ## Enforces
 
-- [Agent Design](../../principles/ai/agent-design.md) — check the work against this principle and cite the clause any finding rests on.
+- Agent Design — check the work against this principle and cite the clause any finding rests on.
 
 ## Inputs
 
